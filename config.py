@@ -43,6 +43,7 @@ DEFAULT_2NDLABELS = [
     '_domainkey',
     ]
 ZONE_TPL = """; {domainname}
+$ORIGIN {domainname}
 $TTL 3600               ; Default TTL in secs(1 hour)
 @       SOA ns1.d9t.de. domainmaster.d9t.de. (
         {serial}      ; Serial number yyyymmddvv
